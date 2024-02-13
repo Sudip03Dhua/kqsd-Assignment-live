@@ -35,7 +35,7 @@ a {
     background-color: #212121;
 }
 .Heading {
-    display: flex;
+    display: block;
     position: relative;
     width: 85%;
     left: 30px;
@@ -48,6 +48,7 @@ a {
     font-family: "Inter", sans-serif;
     font-weight: 900;
     width: 30%;
+    display: inline;
     font-size: 1.3rem;
     color: white;
 }
@@ -55,15 +56,9 @@ a {
 .navBar {
     width: 20px;
     height: 20px;
-    margin-left: 240px;
+    display: inline;
     background-color: white;
-    font-size: .7rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    color: red;
-    line-height: 22px;
-    margin-right: 9px;
-    position: relative;
+    float: right;
     
     
 }
