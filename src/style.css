@@ -34,33 +34,40 @@ a {
     height: 1024px;
     background-color: #212121;
 }
-
 .Heading {
-    position: relative;
-    width: 350px;
     display: flex;
-    padding-top: 30px;
-    margin-left: 30px;
-    flex-direction: row;
-
+    position: relative;
+    width: 85%;
+    left: 30px;
+    align-items: center;
+    padding: 0;
+    top: 50px;
 }
 
 .Heading-title {
     font-family: "Inter", sans-serif;
     font-weight: 900;
-    margin: 0;
-    font-size: 2rem;
+    width: 30%;
+    font-size: 1.3rem;
     color: white;
 }
 
 .navBar {
-    float: right;
-    margin-left: 150px;
-    background-color: rgb(168, 58, 58);
     width: 20px;
     height: 20px;
-
+    margin-left: 240px;
+    background-color: white;
+    font-size: .7rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: red;
+    line-height: 22px;
+    margin-right: 9px;
+    position: relative;
+    
+    
 }
+
 
 /* Heading-about */
 .Heading-about {
@@ -257,27 +264,93 @@ a {
     }
 
     .Heading {
-        position: relative;
-        width: 350px;
         display: flex;
-        padding-top: 30px;
-        margin-left: 30px;
-        flex-direction: row;
-
+        position: relative;
+        width: 95%;
+        
+        align-items: center;
+        padding: 0;
+        top: 50px;
     }
 
     .Heading-title {
         font-family: "Inter", sans-serif;
         font-weight: 900;
-        margin: 0;
-        font-size: 2rem;
+        width: 20%;
+        font-size: 1.3rem;
+      
         color: white;
+
     }
 
     .fullnavbar {
-        display: block;
+        display: inline;
+        width: 80%;
+        -webkit-user-select: none;
+        user-select: none;
+        position: relative;
     }
 
+    
+    .list-nav a {
+        list-style: none;
+        color: white;
+        font-size: .7rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        line-height: 22px;
+        margin-right: 9px;
+        position: relative;
+        padding-bottom: 10px;
+       
+    }
+    .list{
+        display: inline;
+        margin-right: 14px;
+        position: relative;
+       
+    }
+
+    ul a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        height: 6px;
+        background-color: #1030a3;
+        transition: all ease-in-out .7s;
+    }
+
+    
+    ul a:hover::after {
+        background-color: #c75919;
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .list-nav {
+       
+        float: right;
+        align-items: end;
+        padding: 0;
+    }
+
+    .get-start {
+        color: white;
+        border: 1px solid white;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 9px;
+        background: transparent;
+        font-size: .7rem;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        line-height: 22px;
+        margin: 0;
+    }
 }
 
 /* Desktop/laptop */
@@ -391,12 +464,28 @@ a {
         font-family: "Inter", sans-serif;
         font-weight: 500;
         line-height: 22px;
+        padding: 4px;
         display: inline;
-        margin-right: 14px;
-
-
+        margin-right: 10px;
+        position: relative;
+    }
+    ul a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        height: 6px;
+        background-color: #1030a3;
+        transition: all ease-in-out .7s;
     }
 
+    
+    ul a:hover::after {
+        background-color: #c75919;
+        border-radius: 6px;
+        width: 100%;
+    }
     .list-nav {
         float: right;
         align-items: end;
@@ -534,6 +623,12 @@ a {
         padding-bottom: 10px;
        
     }
+    .list{
+        display: inline;
+        margin-right: 14px;
+        position: relative;
+       
+    }
 
     ul a::after {
         content: "";
@@ -546,13 +641,7 @@ a {
         transition: all ease-in-out .7s;
     }
 
-    .list{
-        display: inline;
-        margin-right: 14px;
-        position: relative;
-       
-    }
-
+    
     ul a:hover::after {
         background-color: #c75919;
         border-radius: 6px;
